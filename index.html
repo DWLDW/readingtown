@@ -8,8 +8,13 @@
   </head>
   <body>
     <header>
-      <h1>학원 출석체크 + 학생평가</h1>
-      <p>시간표 기반 수업 관리, 출석 및 다중 점수 채점</p>
+      <div class="header-top">
+        <div>
+          <h1>학원 출석체크 + 학생평가</h1>
+          <p>시간표 기반 수업 관리, 출석 및 다중 점수 채점</p>
+        </div>
+        <div id="auth-area"></div>
+      </div>
     </header>
 
     <div class="layout">
@@ -22,13 +27,6 @@
         <section id="module-root"></section>
       </main>
     </div>
-
-    <template id="panel-template">
-      <div class="panel">
-        <h3></h3>
-        <div class="content"></div>
-      </div>
-    </template>
 
     <script type="module" src="js/app.js"></script>
   </body>
