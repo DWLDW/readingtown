@@ -3,30 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>학원 출석/평가 관리</title>
+    <title>Readingtown Next</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="header-top">
-        <div>
-          <h1>학원 출석체크 + 학생평가</h1>
-          <p>시간표 기반 수업 관리, 출석 및 다중 점수 채점</p>
-        </div>
-        <div id="auth-area"></div>
-      </div>
-    </header>
+    <main class="container">
+      <section class="hero card">
+        <p class="badge">NEW BRANCH START</p>
+        <h1>Readingtown Next</h1>
+        <p>기존 내용을 비우고 새롭게 개발을 시작할 수 있는 초기 화면입니다.</p>
+      </section>
 
-    <div class="layout">
-      <aside>
-        <h2>메뉴</h2>
-        <nav id="menu"></nav>
-      </aside>
+      <section class="card">
+        <h2>개발 로드맵</h2>
+        <ul class="roadmap">
+          <li>요구사항 정리</li>
+          <li>MVP 화면 설계</li>
+          <li>핵심 데이터 모델 정의</li>
+          <li>기능 단위 구현</li>
+        </ul>
+      </section>
 
-      <main>
-        <section id="module-root"></section>
-      </main>
-    </div>
+      <section class="card">
+        <h2>이번 브랜치 TODO</h2>
+        <form id="todo-form" class="todo-form">
+          <input id="todo-input" name="todo" placeholder="예: 로그인 플로우 설계" required />
+          <button type="submit">추가</button>
+        </form>
+        <ul id="todo-list" class="todo-list"></ul>
+      </section>
+    </main>
 
     <script type="module" src="js/app.js"></script>
   </body>
